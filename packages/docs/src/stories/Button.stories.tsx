@@ -8,6 +8,11 @@ export default {
   args: {
     children: 'Send',
   },
+  argTypes: {
+    onClick: {
+      action: 'click',
+    },
+  },
 } as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
@@ -28,7 +33,7 @@ export const Tertiary: StoryObj<ButtonProps> = {
 
 export const Small: StoryObj<ButtonProps> = {
   args: {
-    size: 'small',
+    size: 'sm',
   },
 }
 
